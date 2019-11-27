@@ -1,7 +1,8 @@
 import { Router } from 'express';
+import DroneController from './app/controllers/DroneController';
 
 const routes = new Router();
 
-routes.get('/', (req, res) => res.json({ message: 'Welcome to Omni CLI' }));
+routes.get('/api/drone/handshake');
 
 export default routes;
